@@ -1,0 +1,1216 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ---------- ELEMENT OVERRIDES ---------- */
+
+:root {
+  --color-darkest-black: #16161D;	/* inactive */
+  --color-off-black: #090909;
+  --color-charcoal-green: #222a28;	/* inactive */
+  --color-pale-pink: #f3ddd3;       /* inactive */
+  --color-pink-gradient: #e7cbbe;   /* inactive */
+}
+  
+body {
+		background-color: #FFF;
+    padding: 15px;
+    font-family: 'Spartan', Helvetica, Arial, sans-serif;
+    line-height: 1.5em;
+    font-size: 18px;
+}
+	@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    	body { 
+		  padding: 30px 30px 0 30px;
+        }
+	}
+
+	@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    	body.page-template-work, body.page-template-work-dev { 
+		  background-image: url('http://www.robinmedina.com/img/2017/background_work_v2.jpg');
+		  background-size: 100% auto;
+		  padding: 30px 30px 0 30px;
+			background-repeat: no-repeat;
+			background-color: #1f201f;
+        }
+	}
+
+a {
+    color: #4e4a80;
+    text-decoration: none;
+}
+
+a:hover {
+	color: #de8069;
+}
+
+h1, .h1, h2 {
+    font-family: 'Vollkorn', Georgia, Times New Roman, serif;
+    font-size: 32px;
+    line-height: 1em;
+    margin-bottom: 0;
+    color: #4e4a80;
+    font-weight: 600;
+}
+
+    @media only screen and (min-width: 640px) {
+    /* For desktop: */
+    	h1, .h1 { 
+            font-size: 64px;
+        }
+	}
+	
+    @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    	h1, .h1 { 
+            font-size: 86px;
+        }
+	}
+
+strong {
+    font-weight: 600;
+}	
+
+i {
+    font-style: italic;
+    font-weight: 300;
+}	
+
+hr {
+	color: #AAA;
+}
+
+/* ---------- UTILITIES ---------- */
+
+.page-card {
+    min-height: 93vmin;
+    max-height: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+}	
+
+.page-card-below {
+    max-width: 1200px;
+    margin: 0 auto;
+}	
+
+body.no-body-image {
+	background-image: none;
+}
+
+/*
+https://github.com/stubbornella/oocss/blob/master/core/spacing/space.css
+p,m = padding,margin
+a,t,r,b,l,h,v = all,top,right,bottom,left,horizontal,vertical
+s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
+*/
+.ptn, .pvn, .pan { padding-top: 0px !important; }
+
+.pts, .pvs, .pas { padding-top: 5px !important; }
+
+.ptm, .pvm, .pam { padding-top: 10px !important; }
+
+.ptl, .pvl, .pal { padding-top: 20px !important; }
+
+.prn, .phn, .pan { padding-right: 0px !important; }
+
+.prs, .phs, .pas { padding-right: 5px !important; }
+
+.prm, .phm, .pam { padding-right: 10px !important; }
+
+.prl, .phl, .pal { padding-right: 20px !important; }
+
+.pbn, .pvn, .pan { padding-bottom: 0px !important; }
+
+.pbs, .pvs, .pas { padding-bottom: 5px !important; }
+
+.pbm, .pvm, .pam { padding-bottom: 10px !important; }
+
+.pbl, .pvl, .pal { padding-bottom: 20px !important; }
+
+.pln, .phn, .pan { padding-left: 0px !important; }
+
+.pls, .phs, .pas { padding-left: 5px !important; }
+
+.plm, .phm, .pam { padding-left: 10px !important; }
+
+.pll, .phl, .pal { padding-left: 20px !important; }
+
+.mtn, .mvn, .man { margin-top: 0px !important; }
+
+.mts, .mvs, .mas { margin-top: 5px !important; }
+
+.mtm, .mvm, .mam { margin-top: 10px !important; }
+
+.mtl, .mvl, .mal { margin-top: 20px !important; }
+
+.mrn, .mhn, .man { margin-right: 0px !important; }
+
+.mrs, .mhs, .mas { margin-right: 5px !important; }
+
+.mrm, .mhm, .mam { margin-right: 10px !important; }
+
+.mrl, .mhl, .mal { margin-right: 20px !important; }
+
+.mbn, .mvn, .man { margin-bottom: 0px !important; }
+
+.mbs, .mvs, .mas { margin-bottom: 5px !important; }
+
+.mbm, .mvm, .mam { margin-bottom: 10px !important; }
+
+.mbl, .mvl, .mal { margin-bottom: 20px !important; }
+
+.mln, .mhn, .man { margin-left: 0px !important; }
+
+.mls, .mhs, .mas { margin-left: 5px !important; }
+
+.mlm, .mhm, .mam { margin-left: 10px !important; }
+
+.mll, .mhl, .mal { margin-left: 20px !important; }
+
+.mra, .mha { margin-right: auto !important; }
+
+.mla, .mha { margin-left: auto !important; }
+
+/* responsive vertical rhythm */
+
+.rvr-b30 {
+	margin-bottom: 15px;
+}
+
+    @media only screen and (min-width: 640px) {
+    /* For desktop: */
+    	.rvr-b30 { 
+            margin-bottom: 30px;
+        }
+	}
+
+.rvr-b45 {
+	margin-bottom: 22px;
+}
+
+    @media only screen and (min-width: 640px) {
+    /* For desktop: */
+    	.rvr-b45 { 
+            margin-bottom: 45px;
+        }
+	}
+
+.rvr-b60 {
+	margin-bottom: 30px;
+}
+
+    @media only screen and (min-width: 640px) {
+    /* For desktop: */
+    	.rvr-b60 { 
+            margin-bottom: 60px;
+        }
+	}
+
+.rvr-b75 {
+	margin-bottom: 37px;
+}
+
+    @media only screen and (min-width: 640px) {
+    /* For desktop: */
+    	.rvr-b75 { 
+            margin-bottom: 75px;
+        }
+	}
+
+.rvr-b90 {
+	margin-bottom: 45px;
+}
+
+    @media only screen and (min-width: 640px) {
+    /* For desktop: */
+    	.rvr-b90 { 
+            margin-bottom: 90px;
+        }
+	}
+
+.rvr-b105 {
+	margin-bottom: 52px;
+}
+
+    @media only screen and (min-width: 640px) {
+    /* For desktop: */
+    	.rvr-b105 { 
+            margin-bottom: 105px;
+        }
+	}
+
+.rvr-b135 {
+	margin-bottom: 67px;
+}
+
+    @media only screen and (min-width: 640px) {
+    /* For desktop: */
+    	.rvr-b135 { 
+            margin-bottom: 135px;
+        }
+	}
+
+.rvr-b150 {
+	margin-bottom: 75px;
+}
+
+    @media only screen and (min-width: 640px) {
+    /* For desktop: */
+    	.rvr-b150 { 
+            margin-bottom: 150px;
+        }
+	}
+
+.rvr-b180 {
+	margin-bottom: 90px;
+}
+
+    @media only screen and (min-width: 640px) {
+    /* For desktop: */
+    	.rvr-b180 { 
+            margin-bottom: 180px;
+        }
+	}
+
+.rvr-b210 {
+	margin-bottom: 105px;
+}
+
+    @media only screen and (min-width: 640px) {
+    /* For desktop: */
+    	.rvr-b210 { 
+            margin-bottom: 210px;
+        }
+	}
+
+/* text align */
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.small-center {
+    text-align: center;
+}
+
+    @media only screen and (min-width: 640px) {
+    /* For desktop: */
+    	.small-center { 
+            text-align: inherit;
+        }
+	}
+	
+.center-to-right {
+    text-align: center;
+}
+
+    @media only screen and (min-width: 640px) {
+    /* For desktop: */
+    	.center-to-right { 
+            text-align: right;
+        }
+	}
+		
+.float-left {
+    float: left;
+}
+
+.float-center {
+    float: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.float-right {
+    float: right;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* pin */
+
+@media only screen and (min-width: 640px) {
+	.pin-bottom {
+		position: absolute; 
+		bottom: 0; 
+		width: 100%; 
+	}
+}
+
+@media only screen and (min-width: 640px) {
+    .right-rule {
+        border-right: 4px solid #4e4a80;
+        min-height: 45vh;
+    }
+}
+
+/* media object */
+
+.media {
+    margin-bottom: 25px;
+}
+
+    @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    	.media { 
+            margin-bottom: 15px;
+        }
+	}
+
+.media, .bd {overflow:hidden; _overflow:visible; zoom:1;}
+.media .img {float:left; margin-right: 15px;}
+.media .img img{display:block;}
+.media .imgExt{float:right; margin-left: 15px;}
+
+/* block vs inline */
+.block-to-inline {
+    display: block;
+}
+
+    @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    	.block-to-inline { 
+            display: inline;
+        }
+	}
+
+.inline-block {
+	display: inline-block;
+}
+
+.page-spacer {
+    height: 25px;
+}	
+
+    @media only screen and (min-width: 640px) {
+    /* For desktop: */
+    	.page-spacer { 
+            height: 45px;
+        }
+	}
+
+.page-spacer-120 {
+    height: 25px;
+}	
+
+    @media only screen and (min-width: 640px) {
+    /* For desktop: */
+    	.page-spacer-120 { 
+            height: 120px;
+        }
+	}
+
+.col-last-child {
+    margin-bottom: 30px;
+}	
+
+    @media only screen and (min-width: 640px) {
+    /* For desktop: */
+    	.col-last-child { 
+            margin-bottom: inherit;
+        }
+	}
+    
+@media only screen and (min-width: 640px) {
+    .rwd-gutters-left {
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
+
+.rwd-left-inner {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+    
+@media only screen and (min-width: 640px) {
+    .rwd-left-inner {
+        margin-left: inherit;
+        margin-right: 15px;
+    }
+}
+    
+@media only screen and (min-width: 640px) {
+    .rwd-gutters-right {
+        margin-right: 0;
+        padding-right: 0;
+    }
+}
+
+.rwd-right-inner {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+    
+@media only screen and (min-width: 640px) {
+    .rwd-right-inner {
+        margin-left: 15px;
+        margin-right: inherit;
+    }
+}
+
+/* inverse */
+
+.inverse, body.page-template-work, .inverse h1, body.page-template-work h1, .inverse h2, body.page-template-work h2,
+.inverse a:link, body.page-template-work a:link, .inverse navMain ul li a:link, body.page-template-work #navMain ul li a:link, 
+.inverse a:visited, body.page-template-work a:visited, .inverse navMain ul li a:visited, body.page-template-work #navMain ul li a:visited,
+.inverse #branding a:link, body.page-template-work #branding a:link, .inverse #branding a:visited, body.page-template-work #branding a:visited {
+	color: white;
+}
+
+.inverse a:hover, .inverse navMain ul li a:hover, body.page-template-work #navMain ul li a:hover,
+.inverse #branding a:hover, body.page-template-work #branding a:hover {
+	color: #DE8069;
+}
+
+body.page-template-work .menu-more {
+
+		background-image: url("http://www.robinmedina.com/img/2016/ellipses-icon-white@3x.png");
+}
+
+xbody.page-template-work h1 {
+	
+background: #229dad; /* Old browsers */
+background: -moz-linear-gradient(top, #229dad 0%, #2989d8 42%, #207cca 50%, #e855ed 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #229dad 0%,#2989d8 42%,#207cca 50%,#e855ed 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #229dad 0%,#2989d8 42%,#207cca 50%,#e855ed 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */	
+	
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* ---------- GLOBAL ---------- */
+
+#header { 
+    padding-top: 15px;
+}
+    
+@media only screen and (min-width: 640px) {
+/* For desktop: */
+	#header { 
+        padding-top: 20px;
+    }
+}
+	
+#branding {
+	margin: 0 auto;
+	font-size: 18px;
+	text-align: center;
+	padding: 0;
+	line-height: 1em;
+}
+
+    @media only screen and (min-width: 640px) {
+    /* For desktop: */
+    	#branding { 
+            float: left;
+            text-align: left;
+            padding-top: 8px;
+            font-size: 20px;
+        }
+	}
+		
+	#branding a, #branding img {
+		text-decoration: none;
+		vertical-align: middle;
+	}
+
+	#branding a {
+		line-height: 1em;
+		letter-spacing: 2px;
+	}
+
+	#branding a:hover img {
+		opacity: 0.4;
+		filter: alpha(opacity=40);
+		cursor: pointer;
+	}
+
+.brand { 
+    max-width: 45px;
+    float: left;
+		margin-top: -4px;
+}
+
+    @media only screen and (min-width: 640px) {
+    /* For desktop: */
+    	.brand { 
+            margin-right: 15px;
+            max-width: 50px;
+        }
+	}
+	
+    @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    	.brand { 
+            max-width: 80px;
+            margin-right: 20px;
+        }
+	}	
+
+.site-title {
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 16px;
+    text-align: center;
+}
+
+    @media only screen and (min-width: 640px) {
+    /* For desktop: */
+    	.site-title { 
+            text-align: left;
+            display: inline-block;
+            margin-top: 17px;
+            line-height: 1em;
+            font-size: 18px;
+        }
+	}
+
+    @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    	.site-title { 
+            margin-top: 36px;
+        }
+	}
+	
+.menu-more {
+    font-size: 30px;
+    display: inline-block;
+    margin-top: 0;
+    float: right;
+		width: 47px;
+		height: 44px;
+		background-size: 47px 44px;
+		background-image: url("http://www.robinmedina.com/img/2016/ellipses-icon-black@3x.png");
+}
+	
+#navMain {
+	text-align: right;
+}
+			
+	#navMain ul li {
+		display: inline;
+		list-style-type: none;
+	}
+	
+	#navMain ul li a {
+		display: inline-block;
+		margin-right: 15px;
+		text-decoration: none;
+		margin-top: 7px;
+		font-size: 15px;
+		letter-spacing: 2px;
+	}
+	
+    @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    	#navMain ul li a { 
+            font-size: 16px;
+            margin-right: 28px;
+            margin-top: 25px;
+        }
+	}
+
+    @media only screen and (min-width: 1000px) {
+    /* For desktop: */
+    	#navMain ul li a { 
+            margin-right: 40px;
+        }
+	}
+		
+.home .nav-home, .blog:not(.home) .nav-index, .single .nav-index, 
+.page-template-archive .nav-index, .category .nav-index, .page-template-work .nav-work {
+    border-top: #4e4a80 solid 4px;
+    margin-top: 0;
+}
+
+.page-template-work .nav-work {
+	border-top-color: white;
+}
+
+.item-img {
+    background-color: rgba(222, 108, 105, 1);
+    -webkit-box-shadow: 7px 7px 0px 2px rgba(222, 108, 105, 1);
+    -moz-box-shadow: 7px 7px 0px 2px rgba(222, 108, 105, 1);
+    box-shadow: 7px 7px 0px 2px rgba(222, 108, 105, 1);
+    width: 50px;
+    height: 50px;
+}
+
+    a:hover .item-img {
+        -webkit-box-shadow: 7px 7px 0px 2px rgba(78, 74, 128, 1);
+        -moz-box-shadow: 7px 7px 0px 2px rgba(78, 74, 128, 1);
+        box-shadow: 7px 7px 0px 2px rgba(78, 74, 128, 1);
+    }
+
+    @media only screen and (min-width: 640px) {
+    /* For desktop: */
+    	.item-img { 
+            width: 60px;
+            height: 60px;
+        }
+	}
+	
+    @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    	.item-img { 
+            width: 100px;
+            height: 100px;
+        }
+	}
+	
+.page-header {
+    margin-top: 0.75em; 
+    margin-bottom: 1.1em;
+}
+
+    @media only screen and (min-width: 640px) {
+    /* For desktop: */
+    	.page-header { 
+            margin-top: 1.3em; 
+            margin-bottom: 2em;
+        }
+	}
+
+    @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    	.page-header { 
+            margin-bottom: 2.5em;
+        }
+	}
+		   
+    .page-header .item-meta {
+        font-size: 12px;
+        line-height: 1.5em;
+    }
+
+    @media only screen and (min-width: 640px) {
+    /* For desktop: */
+    	.page-header .item-meta { 
+            line-height: 1.2em;
+            font-size: 16px;
+        }
+	} 
+	
+.copyright { 
+    font-size: 15px; 
+    letter-spacing: 2px;
+		line-height: 1em;
+}  
+
+.copyright a {
+	text-decoration: underline;
+}
+
+    @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    	.copyright { 
+            display: inline-block; 
+            padding: 1px 5px; 
+						margin-bottom: 25px;
+        }
+	}  
+
+#link-list, #link-list li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+} 
+  
+    #link-list .link-underline {
+        letter-spacing: 1px;
+    }
+
+/* indent with icon fonts https://codepen.io/mburnette/pen/rdGJc */
+.list-item {
+    margin-left: 1.5em;
+    margin-bottom: 15px;
+}
+
+    .list-item:before {
+      content: '\e641';
+      font-family: 'Pe-icon-7-stroke';
+      float: left;
+      margin-left: -1.5em;
+      color: #4e4a80;
+    }
+
+    @media only screen and (min-width: 640px) {
+    /* For desktop: */
+    	.list-item { 
+            margin-bottom: inherit;
+        }
+	}
+
+.rwd-bullet-list {
+	list-style-type: circle;
+  margin-left: 15px;
+}
+
+    @media only screen and (min-width: 640px) {
+    /* For desktop: */
+    	.rwd-bullet-list { 
+            margin-left: inherit;
+        }
+	}
+
+.card {
+    padding: 0.75em;
+    margin-bottom: 2em;
+}
+
+    @media only screen and (min-width: 640px) {
+    /* For desktop: */
+    	.card { 
+            margin-bottom: 1.5em;
+        }
+	}
+
+.btn-rounded-ghost, body.page-template-work a.btn-rounded-ghost {
+	color: #DE8069;
+	border: 2px solid #DE8069;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	padding: 10px 20px;
+}
+
+.btn-rounded-ghost:hover, body.page-template-work a.btn-rounded-ghost:hover {
+	color: #4E4A80;
+	border-color: #4E4A80;
+}
+
+/* ---------- TYPOGRAPHY ---------- */
+
+.type-futura {
+	font-family: 'Spartan', Helvetica, Arial, sans-serif;
+}
+
+.type-book {
+    font-family: 'Vollkorn', Georgia, Times New Roman, serif;
+}
+
+.type-avenir {
+	font-family: "Avenir Next", Trebuchet MS1, Helvetica, sans-serif;
+}
+
+.type-courier {
+	font-family: Courier New, Courier New, Courier6, monospace;
+}
+
+.item-label {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #de8069;
+}
+
+    .item-label.large {
+        font-size: 20px;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+.item-heading {
+    font-weight: bold;
+    color: #0d0e0e;
+    letter-spacing: 1px;
+    line-height: 1.2em;
+    font-size: 15px;
+}
+
+    @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    	.item-heading { 
+            font-size: inherit;
+        }
+	}
+	
+.item-meta {
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 1em;
+}
+
+    @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    	.item-meta { 
+            font-size: 14px;
+        }
+	}
+	
+.caps {
+    text-transform: uppercase;
+}
+
+.no-underline, .no-underline a {
+    text-decoration: none;
+}
+
+#navMain ul li a, #branding a, .item-meta a, .link-black {
+    color: #0d0e0e;
+}	
+	
+#branding a:hover, #navMain ul li a:hover, a:hover .item-heading, .item-meta a:hover, a:hover .link-black {
+    color: #de8069;
+}
+
+.link-underline {
+    border-bottom: 1px dotted #4e4a80;
+    padding-bottom: 2px;
+}
+
+		.inverse .link-underline {
+			border-color: white;
+		}
+
+    .link-underline a:hover {
+        border-style: solid;
+    }
+
+.caps-off {
+    text-transform: inherit;
+}
+
+.headline {
+    font-size: 24px;
+    line-height: 1.1em;
+}
+
+    @media only screen and (min-width: 640px) {
+    /* For desktop: */
+    	.headline { 
+            font-size: 36px;
+            line-height: 1em;
+        }
+	}
+	
+    @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    	.headline { 
+            font-size: 46px;
+        }
+	}
+
+.rwd-text32 {
+	font-size: 16px;
+}
+
+    @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    	.rwd-text32 { 
+            font-size: 32px;
+        }
+		}
+
+.rwd-text36 {
+	font-size: 17px;
+}
+
+    @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    	.rwd-text36 { 
+            font-size: 36px;
+        }
+		}
+
+.rwd-text68 {
+	font-size: 32px;
+}
+
+    @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    	.rwd-text68 { 
+            font-size: 68px;
+        }
+		}
+
+.caption, .wp-caption-text {
+    color: #2e3192;
+    font-size: 14px;
+    line-height: 1.05em;
+}
+
+.project-caption {
+	font-style: italic;
+	font-size: 14px;
+	line-height: 1.05em;
+}
+
+.article-body {
+    line-height: 2em;
+    margin-top: -1.25em;
+}
+
+    @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    	.article-body { 
+            line-height: inherit;
+        }
+	}
+	
+	.article-body p {
+    	margin-bottom: 1em;
+	}
+
+.type-green {
+	color: #05e0a5;
+}
+
+.type-green a:hover, a.type-green:hover {
+	color: #ffd86c;
+}
+
+.summary-body {
+	  font-weight: 500;
+}
+
+.summary-body p {
+    font-size: 1.35em;
+		line-height: 1.618em;
+}
+
+.project-body {
+	line-height: 1.618em;
+}
+
+.project-body h3 {
+	margin-top: 2.5em;
+	margin-bottom: 1em;
+}
+
+.project-body p {
+	margin-bottom: 1.25em;
+}
+
+.summary-body a, .project-body a {
+	text-decoration: underline;
+}
+
+/* ---------- COMPONENTS ---------- */ 
+
+/* css modal */
+.modalDialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-off-black);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    color: white;
+}
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+.modal-header, .modal-footer {
+    background-color: #f2dcd2;
+    text-align: right;
+    width: 100%;
+    height: 150px;
+}
+
+.modal-header {
+    background-image: url(http://robinmedina.com/img/black-bottom.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.modal-footer {
+    position: absolute;
+    bottom: 0;
+    background-image: url(http://robinmedina.com/img/black-top.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.modal-body {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    z-index: 500;
+}
+
+.close {
+    color: black;
+    line-height: 1em;
+    font-size: 44px;
+    width: 44px;
+    text-decoration: none;
+    margin-top: 28px;
+    margin-right: 9%;
+    display: inline-block;
+}
+
+.modal-logo {
+    width: 44px;
+    margin-right: 9%;
+    position: absolute;
+    bottom: 28px;
+    right: 0;
+}
+
+.work-title {
+	margin-bottom: 42px;
+}
+
+    @media only screen and (min-width: 640px) {
+    /* For tablet: */
+    	.work-title { 
+            margin-bottom: inherit;
+        }
+	}
+
+.work-btn {
+	margin-bottom: 8px;
+	display: inline-block;
+}
+
+    @media only screen and (min-width: 640px) {
+    /* For tablet: */
+    	.work-btn { 
+            display: inline;
+						margin-top: 0;
+						margin-bottom: 20px;
+						margin-left: 10px;
+						margin-right: 10px;
+        }
+	}
+	
+.work-section-title {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+    @media only screen and (min-width: 640px) {
+    /* For tablet: */
+    	.work-section-title { 
+            margin-top: 20px;
+						margin-bottom: 20px;
+        }
+	}
+
+.small-skin {
+	background: #f5e8e2;
+}
+
+    @media only screen and (min-width: 640px) {
+    /* For tablet: */
+    	.small-skin { 
+            background: inherit;
+        }
+	}
+
+.small-divider {
+	border-top: 3px solid #4e4a80;
+	padding-top: 20px;
+}
+
+    @media only screen and (min-width: 640px) {
+    /* For tablet: */
+    	.small-divider { 
+						border-width: 0;
+						padding-top: 0;
+        }
+	}
+
+.thick-divider {
+	border-top: 14px solid #000;
+}
+
+.thick-divider.pepto {
+	border-color: #f1a4a4;
+}
+
+.thick-divider.mint {
+	border-color: #05e0a5;
+}
+
+.thick-divider.yellow {
+	border-color: #ffd86c;
+}
+
+.page-id-43 #cs-link-bwy-econ {
+	display: none;
+}
+
+.page-id-120 #cs-link-yoga {
+	display: none;
+}
+
+.page-id-123 #cs-link-pilates {
+	display: none;
+}

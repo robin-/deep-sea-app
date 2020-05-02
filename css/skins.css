@@ -1,0 +1,145 @@
+.xsk-pink {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f3ddd3+0,e7cbbe+100 */
+    background: #f3ddd3; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f3ddd3 0%, #e7cbbe 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #f3ddd3 0%,#e7cbbe 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #f3ddd3 0%,#e7cbbe 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3ddd3', endColorstr='#e7cbbe',GradientType=0 ); /* IE6-9 */
+
+}
+
+.sk-outline {
+    border: 4px solid #4e4a80;
+}
+
+.sk-pink {
+    /* changed from f3e3db */
+    background: #f9f1ed; 
+
+}
+
+.sk-charcoal {
+    background: #171616; 
+
+}
+
+    @media only screen and (min-width: 640px) {
+    /* For tablet: */
+        .sk-charcoal.angles {
+            background-image: url(http://www.robinmedina.com/img/2017/4-black-lines.png);
+            background-position: top center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    @media only screen and (min-width: 640px) {
+    /* For tablet: */
+        .sk-charcoal.triangles {
+            background-image: url(http://www.robinmedina.com/img/2017/black-triangles.png);
+            background-position: bottom center;
+            background-repeat: no-repeat;
+        }
+    }
+
+.sk-black {
+    background: #000; 
+
+}
+
+.sk-white, .page-template-project-detail, .page-template-work-new {
+  background: #FFF;
+}
+
+.sk-pepto {
+  background: #f1a4a4;
+}
+
+    @media only screen and (min-width: 640px) {
+    /* For tablet: */
+        .sk-pepto {
+            background-image: url(http://www.robinmedina.com/img/2017/4-green-lines.png);
+            background-position: top center;
+            background-repeat: no-repeat;
+        }
+    }
+
+.sk-mint {
+  background: #05e0a5;
+}
+
+    @media only screen and (min-width: 640px) {
+    /* For tablet: */
+        .sk-mint {
+            background-image: url(http://www.robinmedina.com/img/2017/4-yellow-lines.png);
+            background-position: top center;
+            background-repeat: no-repeat;
+        }
+    }
+
+.sk-yellow {
+  background: #ffd86c;
+}
+
+    @media only screen and (min-width: 640px) {
+    /* For tablet: */
+        .sk-yellow {
+            background-image: url(http://www.robinmedina.com/img/2017/4-pink-lines.png);
+            background-position: top center;
+            background-repeat: no-repeat;
+        }
+    }
+
+.sk-deep-purple {
+  background: #18171d;
+}
+
+.sk-deep-ombre {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#18171d+0,000000+45,000000+100 */
+background: #18171d; /* Old browsers */
+background: -moz-linear-gradient(top,  #18171d 0%, #000000 45%, #000000 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #18171d 0%,#000000 45%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #18171d 0%,#000000 45%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#18171d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+
+
+
+}
+
+.page-template-work .page-card, .page-template-work-dev .page-card {
+  background-color: #1f1f1d;
+}
+
+/* deep sea app case study background */
+
+@media only screen and (min-width: 640px) {
+    /* For tablet: */
+  .bg-beroe {
+    background-image: url(http://www.robinmedina.com/img/2017/beroe-v2.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+}
+
+/* borders */
+
+.white-border {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+/* protfolio responsive images */
+
+.port-img-sea {
+  background-image: url(http://robinmedina.com/img/2017/jellyfish.jpg);
+}
+
+@media only screen and (min-width: 640px) {
+    /* For tablet: */
+  .port-img-sea {
+    background-image: url(http://robinmedina.com/img/2017/jellyfish.jpg);
+  }
+}
+
+.home {
+background: rgb(245,216,207);
+background: linear-gradient(180deg, rgba(245,216,207,1) 0%, rgba(255,236,242,1) 37%, rgba(254,252,253,1) 71%, rgba(253,254,255,1) 100%);
